@@ -1,0 +1,206 @@
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /*================= start nav====================  */
+
+  .list {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  body:has(#mnue:checked) .nav .nav-links {
+    display: block;
+  }
+  body:has(#mnue:checked) .nav {
+    height: 100%;
+    background-color: hsl(0, 0%, 100%, 0.7);
+  }
+  body:has(#mnue:checked) .close {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1200;
+  }
+  .nav-links ul {
+    padding: 50px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    flex-direction: column;
+    background-color: var(--color-light);
+    width: 30%;
+    z-index: 999;
+  }
+  .nav-links ul a {
+    margin: 0 10px;
+  }
+  /*====================== end nav=========================  */
+  /*====================== start footer=========================  */
+
+  .items .about {
+    width: calc(50% - 15px);
+  }
+  .items .subscribe {
+    order: 1;
+    margin-top: 30px;
+  }
+  .items .contact-details {
+    width: calc(50% - 15px);
+  }
+  /*====================== end footer=========================  */
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .inner-home {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .inner-home div {
+    width: 100%;
+  }
+
+  .inner-home .home-content {
+    text-align: center;
+  }
+  .inner-home .home-content .btns {
+    justify-content: center;
+  }
+
+  /* end home */
+  /* start chefs */
+
+  .inner-chefs .card {
+    width: calc(50% - 15px);
+  }
+
+  /* end chefs */
+
+  /*====================== start gallery=========================  */
+  .gallery-images {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    /* gap: 15px;  */
+    grid-template-areas:
+      "meal-1 meal-2 "
+      "meal-1 meal-2 "
+      "meal-1 meal-2 "
+      "meal-3 meal-2 "
+      "meal-3 meal-2 "
+      "meal-3 meal-2 "
+      "meal-4 meal-2 "
+      "meal-4 meal-5 "
+      "meal-4 meal-5 "
+      "meal-4 meal-5 "
+      "meal-4 meal-6 "
+      "meal-4 meal-6 "
+      "meal-7 meal-6 "
+      "meal-7  ."
+      "meal-7 .";
+  }
+
+  /*====================== end gallery=========================  */
+  /*====================== start contact=========================  */
+  .form-contact .groub-input {
+    display: block;
+  }
+  /*====================== end contact=========================  */
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+
+  /* start chefs */
+
+  .inner-chefs .card {
+    width: 100%;
+  }
+
+  /* end chefs */
+
+  /*====================== start gallery=========================  */
+
+  .gallery-images {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    /* gap: 15px;  */
+    grid-template-areas:
+      "meal-1"
+      "meal-1"
+      "meal-1"
+      "meal-3"
+      "meal-3"
+      "meal-3"
+      "meal-4"
+      "meal-4"
+      "meal-4"
+      "meal-4"
+      "meal-4"
+      "meal-4"
+      "meal-7"
+      "meal-7"
+      "meal-7"
+      "meal-2"
+      "meal-2"
+      "meal-2"
+      "meal-2"
+      "meal-2"
+      "meal-2"
+      "meal-2"
+      "meal-5"
+      "meal-5"
+      "meal-5"
+      "meal-5"
+      "meal-6"
+      "meal-6"
+      "meal-6";
+  }
+  /*====================== end gallery=========================  */
+  /*====================== start contact=========================  */
+  .info-contact {
+    gap: 20px;
+  }
+  .info-contact .caption {
+    width: calc(100%);
+  }
+  /*====================== end contact=========================  */
+
+  /*====================== start footer=========================  */
+
+  .items .about {
+    width: 100%;
+  }
+  .items .subscribe {
+    order: 1;
+    width: 100%;
+  }
+  .items .contact-details {
+    width: 100%;
+    margin-top: 30px;
+        order: 2;
+
+  }
+  /*====================== end footer=========================  */
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0 30px;
+  }
+}
