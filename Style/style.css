@@ -68,17 +68,18 @@
   font-size: 27px;
   padding: 10px;
 }
-.list {
+.close,
+.list-icons {
   display: none;
 }
-.list .close i {
+.close i {
   cursor: pointer;
   opacity: 0.5;
   font-size: 24px;
   transition: var(--animation-duration);
-  color: red;
+  color: rgba(255, 0, 0, 0.716);
 }
-.list .close i:hover {
+.close i:hover {
   opacity: 0.9;
 }
 body:has(#mode:checked) .dark {
@@ -209,7 +210,6 @@ body:has(.contact:target) .nav .nav-links a[href="#contact"]::after {
 .main-header h2 {
   font-family: var(--font-primary);
   font-size: 50px;
-  font-size: 400;
   color: var(--font-default);
   padding: 10px 0;
   font-weight: 400;
@@ -229,7 +229,7 @@ body:has(.contact:target) .nav .nav-links a[href="#contact"]::after {
   transition: var(--animation-duration);
   background-color: var(--color-card-light);
   border-radius: 8px;
-  box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -564,7 +564,7 @@ textarea:focus {
   justify-content: space-between;
   gap: 25px;
 }
-.about .media .social-media span {
+.about .media .social-media a {
   width: 50px;
   height: 50px;
   background-color: var(--color-primary);
@@ -575,8 +575,9 @@ textarea:focus {
   border: 1px var(--color-primary) solid;
   transition: var(--animation-duration);
   cursor: pointer;
+  color: #fff;
 }
-.about .media .social-media span:hover {
+.about .media .social-media a:hover {
   background-color: transparent;
   border: 1px var(--color-primary) solid;
 }

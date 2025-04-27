@@ -25,8 +25,11 @@
                 <div class="brand">
                     <h1><a href="#">Mealify</a></h1>
                 </div>
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                     <ul>
+                        <li class="list-close-icon">
+                            <a href="#home" class="close"><i class="fa-solid fa-xmark"></i></a>
+                        </li>
                         <li><a href="#home" class="acitve">home</a></li>
                         <li><a href="#chefs">Chefs</a></li>
                         <li><a href="#gallery">Gallery</a></li>
@@ -44,13 +47,11 @@
                         <input type="checkbox" id="mode" hidden>
                     </div>
                     <div class="list">
-                        <label for="mnue" class="open">
+                        <a class="list-icons" href="#nav-links">
                             <i class="fa-solid fa-bars"></i>
-                        </label>
-                        <label for="mnue" class="close hidden">
-                            <i class="fa-solid fa-xmark"></i>
-                        </label>
-                        <input type="checkbox" hidden id="mnue">
+                        </a>
+
+                        <!-- <input type="checkbox" hidden id="mnue"> -->
                     </div>
 
                 </div>
@@ -366,10 +367,10 @@
                     <div class="media">
                         <h3>Social Media</h3>
                         <div class="social-media">
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                            <span><i class="fa-brands fa-facebook-f"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-linkedin"></i></span>
+                            <a href="https://x.com/"  ><i class="fa-brands fa-twitter"></i></a href="">
+                            <a href="https://www.facebook.com/?locale=ar_AR"><i class="fa-brands fa-facebook-f"></i></a href="">
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a href="">
+                            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
